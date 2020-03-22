@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to "TIFFANY CHARLES", "/", class: "navbar-brand nav-header" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse nav-bar-options" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+<!--       <a class="nav-item nav-link active" href="">Home <span class="sr-only">(current)</span></a> -->
+      <%= link_to "Hands", "/hands", class: "nav-item nav-link" %>
+      <%= link_to "Commercial", "/commercial", class: "nav-item nav-link" %>
+      <%= link_to "About", "/about", class: "nav-item nav-link" %>
+      <%= link_to "Contact", "/contact", class: "nav-item nav-link" %>
+    </div>
+  </div>
+  <div class="social-media">
+    <%= link_to "", "https://www.instagram.com/tiffanyrcharles/", class: "fa fa-instagram" , target: "_blank" %>
+    <%= link_to "", "", class: "fa fa-facebook" , target: "_blank" %>
+    <%= link_to "", "", class: "fa fa-twitter" , target: "_blank" %>
+  </div>
+</nav>

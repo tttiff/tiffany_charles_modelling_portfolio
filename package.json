@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "simplelightbox": "^2.1.2"
+  }
+}

@@ -1,0 +1,134 @@
+
+<div class="container">
+  <div class="col-md-12 d-flex justify-content-center job-categories">
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Beauty</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Food & Drink</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Tech</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Editorial</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">TV Commercials</button>
+  </div>
+
+<!-- GALLERY: L'OREAL -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            L'Oreal
+        </div>
+          <% Cloudinary::Api.resources_by_tag('loreal').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+
+<!-- GALLERY: STYLIST MAGAZINE -->
+  <div class="row">
+    <div class="col-sm-12 mb20">
+    <div class="row">
+       <div class="col-sm-3 job-name-column img-fluid rounded">
+        Stylist Magazine
+       </div>
+       <!-- MILK and AUBERGINE EDITORIAL -->
+           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296865/hand_model_site/stylist_garden/Stylist_Aubergine_Shoot.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296865/hand_model_site/stylist_garden/Stylist_Aubergine_Shoot.jpg" class="img-fluid rounded">
+          </a>
+          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296905/hand_model_site/stylist_garden/opener_f.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296905/hand_model_site/stylist_garden/opener_f.jpg" class="img-fluid rounded">
+          </a>
+          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296906/hand_model_site/stylist_garden/shot-3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296906/hand_model_site/stylist_garden/shot-3.jpg" class="img-fluid rounded">
+          </a>
+
+
+        </div>
+<!-- GARDEN EDITORIAL -->
+        <div class="row">
+
+          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" class="img-fluid rounded">
+          </a>
+          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" class="img-fluid rounded">
+          </a>
+
+
+          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" class="img-fluid rounded">
+          </a>
+           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_3.jpg" class="img-fluid rounded">
+          </a>
+        </div>
+
+    </div>
+     <hr class="line" />
+  </div>
+
+<!-- GALLERY: 77 DIAMONDS -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            77 Diamonds
+        </div>
+          <% Cloudinary::Api.resources_by_tag('77diamonds-white-shirt').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+          <% Cloudinary::Api.resources_by_tag('77diamonds-other').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+  <!-- GALLERY: BOUCHERER -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Boucherer
+        </div>
+          <% Cloudinary::Api.resources_by_tag('boucherer').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+
+</div>
+
+
+
+<script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+</script>
+
