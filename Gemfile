@@ -8,3 +8,5 @@ gem "activesupport", ">= 5.2.4.3"
 
 
 gem 'cloudinary', '~> 1.12.0'
+
+gem 'middleman-deploy'

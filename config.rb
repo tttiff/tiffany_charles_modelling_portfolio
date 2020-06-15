@@ -15,6 +15,9 @@ page '/*.txt', layout: false
 
 activate :directory_indexes
 
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -29,6 +32,13 @@ activate :directory_indexes
 #     which_fake_page: 'Rendering a fake page with a local variable'
 #   },
 # )
+
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
 
 # Helpers
 # Methods defined in the helpers block are available in templates
