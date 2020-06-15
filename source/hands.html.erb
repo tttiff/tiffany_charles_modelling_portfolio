@@ -1,4 +1,4 @@
-
+<!--
 <div class="container">
   <div class="col-md-12 d-flex justify-content-center job-categories">
     <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
@@ -7,7 +7,7 @@
     <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Tech</button>
     <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Editorial</button>
     <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">TV Commercials</button>
-  </div>
+  </div> -->
 
 <!-- GALLERY: L'OREAL -->
   <div class="row">
@@ -18,7 +18,7 @@
         </div>
           <% Cloudinary::Api.resources_by_tag('loreal').map do |results, image| %>
             <% image.map do |key| %>
-              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
               <%= image_tag key["url"], class: "img-fluid rounded"%>
               </a>
             <% end %>
@@ -50,24 +50,7 @@
 
 
         </div>
-<!-- GARDEN EDITORIAL -->
-        <div class="row">
 
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" class="img-fluid rounded">
-          </a>
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" class="img-fluid rounded">
-          </a>
-
-
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" class="img-fluid rounded">
-          </a>
-           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_3.jpg" class="img-fluid rounded">
-          </a>
-        </div>
 
     </div>
      <hr class="line" />
@@ -82,14 +65,7 @@
         </div>
           <% Cloudinary::Api.resources_by_tag('77diamonds-white-shirt').map do |results, image| %>
             <% image.map do |key| %>
-              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
-              <%= image_tag key["url"], class: "img-fluid rounded"%>
-              </a>
-            <% end %>
-          <% end %>
-          <% Cloudinary::Api.resources_by_tag('77diamonds-other').map do |results, image| %>
-            <% image.map do |key| %>
-              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
               <%= image_tag key["url"], class: "img-fluid rounded"%>
               </a>
             <% end %>
@@ -109,7 +85,188 @@
         </div>
           <% Cloudinary::Api.resources_by_tag('boucherer').map do |results, image| %>
             <% image.map do |key| %>
-              <a href= <%= key["url"] %>, data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <!-- GALLERY: SELLOTAPE -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Sellotape
+        </div>
+          <% Cloudinary::Api.resources_by_tag('sellotape').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Waitrose
+        </div>
+          <% Cloudinary::Api.resources_by_tag('waitrose').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Ingle & Rhode
+        </div>
+          <% Cloudinary::Api.resources_by_tag('ingle_and_rhode').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Max Factor
+        </div>
+        <% Cloudinary::Api.resources_by_tag('max_factor').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Nails Inc
+        </div>
+        <% Cloudinary::Api.resources_by_tag('nails_inc').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Kenco
+        </div>
+          <% Cloudinary::Api.resources_by_tag('kenco').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Plenty
+        </div>
+          <% Cloudinary::Api.resources_by_tag('plenty').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Vype
+        </div>
+          <% Cloudinary::Api.resources_by_tag('vype').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            House of Fraiser
+        </div>
+          <% Cloudinary::Api.resources_by_tag('house_of_fraiser').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Chris Turner
+        </div>
+          <% Cloudinary::Api.resources_by_tag('chris_turner').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
               <%= image_tag key["url"], class: "img-fluid rounded"%>
               </a>
             <% end %>
@@ -120,6 +277,342 @@
   </div>
 
 
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Elle Magazine
+        </div>
+          <% Cloudinary::Api.resources_by_tag('elle_magazine').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            ES Magazine
+        </div>
+          <% Cloudinary::Api.resources_by_tag('es_magazine').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+      <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Lucazade
+        </div>
+          <% Cloudinary::Api.resources_by_tag('lucazade').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
+              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Iceland -
+            <br>Slimming World
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592234091/hand_model_site/rebecca_rauter_iceland_slimming_world.mp4"></iframe>
+        </div>
+        <div class="col-sm-3 ">
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592240802/hand_model_site/iceland/Iceland_Slimming_World.mp4"></iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Dominos
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+          <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592235852/hand_model_site/dominos_ad.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Bailey's
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592233986/hand_model_site/y2mate.com_-_Baileys_Hot_Chocolate_ZMsbM9ObqCI_1080p.mp4"></iframe>
+        </div>
+       <!--  BELOW KEEPS VIDEOS ON LINE -->
+        <div class="col-sm-3 ">
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592235850/hand_model_site/y2mate.com_-_BAILEYS_CONE_SWEET_CONE_y29P6VJab_g_1080p.mp4"></iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            O2
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592233968/hand_model_site/80226601_453441298902168_7995946869596923923_n.mp4"></iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+           Knorr
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+          <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236289/hand_model_site/Knorr.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Swarovski
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236293/hand_model_site/Swarovski_Christmas.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Tesco
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+          <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592234460/hand_model_site/Tesco_Food_Love_Stories___Jane_s_Fish_Cakes_For_Two_Or_One.mp4">
+          </iframe>
+
+        </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Vanarama
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592234454/hand_model_site/vanarama/videoplayback_copy_2.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Nescafe
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236339/hand_model_site/Nescafe.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Philadelphia
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236345/hand_model_site/philadelphia_ad.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Quaker
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592237683/hand_model_site/QuakerOatsUK_-_Large.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Starbucks
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236357/hand_model_site/starbucks_social_video_long_edit.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Max Factor
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592236338/hand_model_site/max_factor.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Lysoform
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://res.cloudinary.com/tttiff/video/upload/v1592243384/hand_model_site/lysoform/Lysoform_TVC.mp4">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            Cadburys - Fredo
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592234010/hand_model_site/frog.mp4"></iframe>
+        </div>
+        <!--  BELOW KEEPS VIDEOS ON LINE -->
+        <div class="col-sm-3 ">
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592234008/hand_model_site/fredo_mask.mp4"></iframe>
+        </div>
+        <!--  BELOW KEEPS VIDEOS ON LINE -->
+        <div class="col-sm-3 ">
+        </div>
+        <div class="col-sm-8 video-container embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://res.cloudinary.com/tttiff/video/upload/v1592234006/hand_model_site/cupcakes.mp4"></iframe>
+        </div>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
 
 </div>
 
