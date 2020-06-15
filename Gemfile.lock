@@ -120,11 +120,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (>= 5.2.4.3)
   cloudinary (~> 1.12.0)
   middleman (~> 4.3.6)
   middleman-autoprefixer (~> 2.7)
-  tzinfo-data
-  wdm (~> 0.1)
 
 BUNDLED WITH
    2.1.4
