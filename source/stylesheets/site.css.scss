@@ -1,19 +1,33 @@
 // HOME  PAGE STYLING
 
 .body {
+  overflow-block: none;
+  width: 100vh;
+}
 
+
+h1{
+    font-size: 1.4em;
+    width: 100vh;
+}
+
+
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 37px;
 }
 
 .navbar {
   padding-right: 10%;
   padding-left: 10%;
+
 }
 
+// .navbar-light .navbar-brand {
+//     color: rgba(0,0,0,.9);
+//     font-size: 50px;
+// }
 
-.navbar-light .navbar-brand {
-    color: rgba(0,0,0,.9);
-    font-size: 50px;
-}
 
 .nav-bar-options {
   justify-content: space-around;
@@ -74,14 +88,16 @@
     object-fit: cover;
 }
 
+
 .video-container {
   // width: auto;
-  height: 500px;
+  // height: 500px;
   max-height: 500px;
+
 }
 
 .embed-responsive {
-      position: relative;
+    position: relative;
     display: -webkit-box;
     width: 70%;
     padding: 0;
@@ -147,6 +163,7 @@
   border: solid black 1px;
   height: 100%;
   background-size: cover;
+  margin-bottom: 10px;
 
 }
 
