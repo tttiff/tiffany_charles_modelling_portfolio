@@ -3,18 +3,22 @@
 .body {
   overflow-block: none;
   width: 100vh;
+
 }
 
 
 h1{
     font-size: 1.4em;
-    width: 100vh;
+    font-weight: lighter;
+    text-align: center;
 }
+
 
 
 .navbar-light .navbar-brand {
     color: rgba(0, 0, 0, 0.9);
     font-size: 37px;
+    margin: 0;
 }
 
 .navbar {
@@ -30,13 +34,25 @@ h1{
 
 
 .nav-bar-options {
-  justify-content: space-around;
+    justify-content: flex-end;
+    margin-right: 60px;
+    font-weight: lighter;
+    font-size: larger;
 }
 
 .navbar-nav a {
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
+// .test {
+//     // position: absolute;
+//     max-width: 80%;
+//     max-height: 70%;
+//     // padding-right: 34px;
+//     // padding-left: 15px;
+//     padding: 0 100px;
+
+// }
 
 .overlay {
   position: absolute;
@@ -44,12 +60,17 @@ h1{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  min-height: 103%;
+  min-width: 100%;
   opacity: 0;
   transition: .3s ease;
   background-color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5em;
 }
+
+
 
 .hover-image-1:hover .overlay {
   opacity: 0.5;
@@ -60,7 +81,7 @@ h1{
 
 .overlay-text {
   color: black;
-  font-size: 60px;
+  font-size: 1.4em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,13 +102,20 @@ h1{
 
 }
 
+// .img-fluid {
+//     max-width: 100%;
+//     height: initial;
+//     max-height: 100%;
+//     object-fit: cover;
+// }
+
 .img-fluid {
     max-width: 100%;
     height: initial;
     min-height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
-}
-
+  }
 
 .video-container {
   // width: auto;
@@ -160,11 +188,11 @@ h1{
   align-self: center;
   font-size: 30px;
   background-clip: border-box;
-  border: solid black 1px;
+  border: solid gray 0.3px;
   height: 100%;
   background-size: cover;
   margin-bottom: 10px;
-
+  font-weight: lighter;
 }
 
 .image-spacing  {
@@ -174,7 +202,7 @@ h1{
 
 .line {
         // padding-left : 8vw;
-        background-color:black;
+        background-color:gray;
         opacity: 0.5;
         height:0.5px;
         width:100%;
