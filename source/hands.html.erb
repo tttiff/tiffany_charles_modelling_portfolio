@@ -18,8 +18,8 @@
         </div>
           <% Cloudinary::Api.resources_by_tag('loreal').map do |results, image| %>
             <% image.map do |key| %>
-              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
-              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing" >
+              <%= image_tag key["url"], alt: “hand_model_london”, class: "img-fluid rounded" %>
               </a>
             <% end %>
           <% end %>
@@ -39,13 +39,13 @@
        </div>
        <!-- MILK and AUBERGINE EDITORIAL -->
            <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296865/hand_model_site/stylist_garden/Stylist_Aubergine_Shoot.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296865/hand_model_site/stylist_garden/Stylist_Aubergine_Shoot.jpg" class="img-fluid rounded">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296865/hand_model_site/stylist_garden/Stylist_Aubergine_Shoot.jpg" class="img-fluid rounded" alt= “hand_model_stylist_magazine_editorial” title= “hand_model_stylist_magazine”>
           </a>
           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296905/hand_model_site/stylist_garden/opener_f.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296905/hand_model_site/stylist_garden/opener_f.jpg" class="img-fluid rounded">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296905/hand_model_site/stylist_garden/opener_f.jpg" class="img-fluid rounded" alt= “hand_model_stylist_magazine_editorial” title= “hand_model_stylist_magazine”>
           </a>
           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584296906/hand_model_site/stylist_garden/shot-3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296906/hand_model_site/stylist_garden/shot-3.jpg" class="img-fluid rounded">
+            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584296906/hand_model_site/stylist_garden/shot-3.jpg" class="img-fluid rounded" alt= “hand_model_stylist_magazine_editorial” title= “hand_model_stylist_magazine”>
           </a>
 
 

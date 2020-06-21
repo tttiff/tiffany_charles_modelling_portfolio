@@ -10,7 +10,7 @@
           <% Cloudinary::Api.resources_by_tag('sothebys').map do |results, image| %>
             <% image.map do |key| %>
               <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
-              <%= image_tag key["url"], class: "img-fluid rounded"%>
+              <%= image_tag key["url"], alt: “hand model london”, title: “tiffany charles hand model london”, class: "img-fluid rounded"%>
               </a>
             <% end %>
           <% end %>
