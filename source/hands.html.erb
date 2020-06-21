@@ -19,7 +19,7 @@
           <% Cloudinary::Api.resources_by_tag('loreal').map do |results, image| %>
             <% image.map do |key| %>
               <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing" >
-              <%= image_tag key["url"], alt: “hand_model_london”, class: "img-fluid rounded" %>
+              <%= image_tag key["url"], alt: "MyInc Logo", class: "img-fluid rounded" %>
               </a>
             <% end %>
           <% end %>
