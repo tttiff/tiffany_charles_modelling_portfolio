@@ -49,20 +49,21 @@
             Stylist Magazine
         </div>
           <!-- GARDEN EDITORIAL for layout -->
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
+          <a href="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_at2vnx.jpg" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_at2vnx.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
           </a>
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294566/hand_model_site/stylist_garden/FullSizeRender_4.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
+          <a href="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_2_jriyg4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_2_jriyg4.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
           </a>
 
 
 
-          <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_2.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
+          <a href="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054868/commercial/Stylist%20Magazine/FullSizeRender_4_riyj4l.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054868/commercial/Stylist%20Magazine/FullSizeRender_4_riyj4l.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
           </a>
-           <a href="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-            <img src="https://res.cloudinary.com/tttiff/image/upload/v1584294564/hand_model_site/stylist_garden/FullSizeRender_4.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
+
+           <a href="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_3_iqic2f.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+            <img src="https://res.cloudinary.com/drgkvt0q0/image/upload/v1599054869/commercial/Stylist%20Magazine/FullSizeRender_3_iqic2f.jpg" class="img-fluid rounded" title= “commercial_hand_model_stylist_magazine_editorial”>
           </a>
       </div>
     </div>
@@ -85,13 +86,15 @@
       </div>
     </div>
     <hr class="line" />
-  </div>
+</div>
+
+<div class="row">
     <div class="col-sm-12">
       <div class="row">
         <div class="col-sm-3 job-name-column img-fluid rounded">
             Fuerventura
         </div>
-          <% Cloudinary::Api.resources_by_tag('model').map do |results, image| %>
+          <% Cloudinary::Api.resources_by_tag('fuerventura').map do |results, image| %>
             <% image.map do |key| %>
               <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing">
               <%= image_tag key["url"], alt: "tiffany charles hand model london", class: "img-fluid rounded"%>
@@ -101,7 +104,7 @@
       </div>
     </div>
     <hr class="line" />
-  </div>
+</div>
 
   <div class="row">
     <div class="col-sm-12">
@@ -189,7 +192,7 @@
         </div>
 
         <video class="col-sm-8 video-container video-fluid z-depth-1" loop controls muted>
-          <source src="https://res.cloudinary.com/tttiff/video/upload/v1592240189/hand_model_site/made_in_london/golden_square_final_no_subtitle_2.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/drgkvt0q0/video/upload/v1599054141/commercial/Made%20in%20London%20-%20Golden%20Square/golden_square_final_no_subtitle_2_bx8rod.mp4" type="video/mp4" />
         </video>
 
 
@@ -205,7 +208,7 @@
             What Car
         </div>
         <video class="col-sm-8 video-container video-fluid z-depth-1" loop controls muted>
-          <source src="https://res.cloudinary.com/tttiff/video/upload/v1584114773/hand_model_site/whatcar/what_car_commercial.mp4" type="video/mp4" alt= "tiffany_charles_tv_commercial_hand_model_london" />
+          <source src="https://res.cloudinary.com/drgkvt0q0/video/upload/v1599054072/commercial/What%20Car/videoplayback_sv4ssa.mp4" type="video/mp4" alt= "tiffany_charles_tv_commercial_hand_model_london" />
         </video>
 
       </div>
