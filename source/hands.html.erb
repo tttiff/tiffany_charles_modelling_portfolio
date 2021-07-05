@@ -9,6 +9,25 @@
     <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">TV Commercials</button>
   </div> -->
 
+<!-- GALLERY: HIA MAG-->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 job-name-column img-fluid rounded">
+            HIA Magazine
+        </div>
+          <% Cloudinary::Api.resources_by_tag('hiamagazine').map do |results, image| %>
+            <% image.map do |key| %>
+              <a href= <%= key["url"] %> data-toggle="lightbox", data-gallery="gallery", class="col-md-3 image-spacing" >
+              <%= image_tag key["url"], alt: "tiffany charles hand model london", class: "img-fluid rounded" %>
+              </a>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <hr class="line" />
+  </div>
+
 <!-- GALLERY: L'OREAL -->
   <div class="row">
     <div class="col-sm-12">
